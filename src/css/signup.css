@@ -225,39 +225,6 @@ form {
   align-self: center;
 }
 
-.pau-brasil {
-  background-image: linear-gradient(
-    to right,
-    #ff5555,
-    #f04f43,
-    #e04a32,
-    #d04620,
-    #c0420b
-  );
-}
-
-.castanheira {
-  background-image: linear-gradient(
-    to right,
-    #814212,
-    #894210,
-    #92410f,
-    #9b3f0f,
-    #a43d0f
-  );
-}
-
-.peroba-rosa {
-  background-image: linear-gradient(
-    to right,
-    #811256,
-    #920f48,
-    #9e1938,
-    #a42a26,
-    #a43d0f
-  );
-}
-
 button {
   padding: 8px 24px;
   background-color: #e08b31;
