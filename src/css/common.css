@@ -1,0 +1,16 @@
+#app-container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.input-error-container {
+  height: 16px;
+  padding-left: 6px;
+  color: rgb(185, 32, 32);
+  font-size: 12px;
+  position: relative;
+}
+
+.input-error-container p {
+  position: absolute;
+}
