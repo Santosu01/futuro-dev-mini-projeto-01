@@ -124,7 +124,7 @@ const validateData = (data) => {
   }
 
   if (errors === 0) {
-    console.log("tudo ok!!!");
+    localStorage.setItem("theme", data.theme);
   }
 };
 
