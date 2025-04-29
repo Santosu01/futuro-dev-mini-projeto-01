@@ -3,24 +3,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 100vw;
-  min-height: 100vh;
-  transition: background-image 0.5s;
-}
-
-.unselected-theme {
-  background-image: linear-gradient(
-    to right,
-    #ffb555,
-    #efa043,
-    #e08b31,
-    #d0771f,
-    #c0620b
-  );
 }
 
 main {
-  min-height: 80vh;
+  min-height: 70vh;
   min-width: 75vw;
   background-color: transparent;
   align-self: center;
@@ -91,69 +77,6 @@ h1 {
   font-weight: 400;
 }
 
-.form-container {
-  padding: 32px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.fields-container {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.input-container {
-  position: relative;
-  display: flex;
-  gap: 8px;
-  border-bottom: 1px solid #ccc;
-}
-
-.input-content {
-  display: flex;
-  gap: 6px;
-}
-
-.icon-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #999;
-}
-
-.input-container input {
-  width: 100%;
-  padding: 4px 8px;
-  font-size: 16px;
-  outline: none;
-}
-
-.input-container label {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  background: transparent;
-  padding: 0 4px;
-  color: #999;
-  transition: 0.2s ease all;
-  pointer-events: none;
-}
-
-.input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
-  top: 0;
-  left: -5px;
-  font-size: 12px;
-  color: #999;
-  transform: translateY(-40%) translateY(-8px);
-}
-
 .theme-color-container {
   display: flex;
   flex-direction: column;
@@ -213,29 +136,6 @@ form {
 
 .radio-group div label span {
   text-align: center;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.button-container div {
-  align-self: center;
-}
-
-button {
-  padding: 8px 24px;
-  background-color: #e08b31;
-  color: #fff;
-  border-radius: 8px;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover {
-  background-color: #efa043;
 }
 
 @media (max-width: 1500px) {
