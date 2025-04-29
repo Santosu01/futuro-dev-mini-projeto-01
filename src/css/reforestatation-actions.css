@@ -103,6 +103,12 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width: 1200px) {
+  .fields-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 800px) {
   #app-container {
     padding: 0px;
@@ -137,10 +143,6 @@ main {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     padding: 0px;
-  }
-
-  .fields-container {
-    grid-template-columns: 1fr;
   }
 
   .button-container div {
