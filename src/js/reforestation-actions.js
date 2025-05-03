@@ -1,4 +1,6 @@
 const button = document.querySelector("button");
+const userNameInputElement = document.querySelector("#username");
+const userName = "Usuário Test";
 
 const getData = () => {
   const treeQuantityInputElement = document.getElementById("tree-quantity");
@@ -70,9 +72,11 @@ const validateData = (data) => {
   }
 
   if (errors === 0) {
-    console.log("tudo ok!!");
+    alert("tudo ok!!");
   }
 };
+
+userNameInputElement.value = userName;
 
 button.addEventListener("click", (e) => {
   e.preventDefault();

@@ -5,36 +5,6 @@
   min-height: 100%;
 }
 
-aside {
-  width: 64px;
-  height: 100vh;
-  background-color: #202d36;
-  padding: 32px 8px;
-}
-
-aside div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #e6e6e6;
-}
-
-aside div i {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 22.5px;
-  font-size: 20px;
-}
-
-.main-container {
-  width: calc(100vw - 64px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 main {
   align-self: center;
   width: 100%;

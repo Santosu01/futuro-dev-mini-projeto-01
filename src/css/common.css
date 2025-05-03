@@ -48,6 +48,39 @@
   );
 }
 
+aside {
+  width: 64px;
+  height: 100vh;
+  background-color: #202d36;
+  padding: 32px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+aside div a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #e6e6e6;
+}
+
+aside div a i {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 22.5px;
+  font-size: 20px;
+}
+
+.main-container {
+  width: calc(100vw - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .form-container {
   padding: 32px;
 }
@@ -71,6 +104,12 @@ form {
   border-bottom: 1px solid #ccc;
 }
 
+.bio-input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .input-content {
   display: flex;
   gap: 6px;
@@ -83,11 +122,18 @@ form {
   color: #999;
 }
 
-.input-container input {
+.icon-bio {
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.input-container input,
+.input-container textarea {
   width: 100%;
   padding: 4px 8px;
   font-size: 16px;
   outline: none;
+  color: gray;
 }
 
 .input-container label {
@@ -102,13 +148,33 @@ form {
   pointer-events: none;
 }
 
+.input-container textarea + label {
+  position: absolute;
+  top: 28px;
+  left: 25px;
+  transform: translateY(-50%);
+  background: transparent;
+  padding: 0 4px;
+  color: #999;
+  transition: 0.2s ease all;
+  pointer-events: none;
+}
+
 .input-container input:focus + label,
-.input-container input:not(:placeholder-shown) + label {
+.input-container textarea:focus + label,
+.input-container input:not(:placeholder-shown) + label,
+.input-container textarea:not(:placeholder-shown) + label {
   top: 0;
   left: -5px;
   font-size: 12px;
   color: #999;
   transform: translateY(-40%) translateY(-8px);
+}
+
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+  top: 14px;
+  left: 5px;
 }
 
 .select-container {
