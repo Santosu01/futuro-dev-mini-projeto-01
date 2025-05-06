@@ -27,38 +27,56 @@ main {
   font-weight: 400;
 }
 
-.form-container {
+.report-container {
+  margin-top: 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-form {
-  margin-top: 32px;
+.table-content {
+  height: 500px;
+  overflow-y: auto;
   width: 100%;
-  max-width: 500px;
-  align-self: center;
+  border: 1px solid #dddddd;
 }
 
-.avatar-container {
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  align-self: center;
+  width: 100%;
+  position: relative;
+}
+
+thead th {
+  top: 0;
+  position: sticky;
+  background-color: #e6e6e6;
+  z-index: 20;
+  color: #274e73;
+}
+
+td,
+th {
+  padding: 8px;
+}
+
+td {
+  text-align: left;
+  z-index: 1;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.no-data-found {
+  padding: 32px 16px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.avatar-container div {
-  align-self: center;
-}
-
-.avatar-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-}
-
-.forest-quantity {
-  color: #999;
 }
 
 @media (max-width: 800px) {
@@ -76,14 +94,5 @@ form {
 
   .main-container {
     width: 100%;
-  }
-
-  .button-container div {
-    width: 100%;
-  }
-
-  .button-container div button {
-    width: 100%;
-    padding: 15px;
   }
 }
